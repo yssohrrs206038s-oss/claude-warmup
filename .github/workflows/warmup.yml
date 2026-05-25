@@ -2,8 +2,8 @@ name: Claude Code Warmup
 
 on:
   schedule:
-- cron: '0 21 * * 0-4'  workflow_dispatch: {}
-
+    - cron: '0 21 * * 0-4'
+  workflow_dispatch:
 concurrency:
   group: claude-warmup
   cancel-in-progress: true
